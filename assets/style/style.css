@@ -5,10 +5,11 @@
     font-family: sans-serif;
 }
 .main{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 .exercise__name{
     text-align: center;
@@ -23,8 +24,32 @@
 .exercise__img{
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .exercise__img img{
     width: 300px;
     max-width: 100%;
+}
+.exercise__btn{
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    font-weight:600;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+}
+.exercise__btn--started{
+    background-color: rgb(32, 207, 32);
+}
+.exercise__btn--stopped{
+    background-color: #f00;
+}
+.exercise__text--start,
+.exercise__text--stop{
+    display: none;
+}
+.exercise__btn--started .exercise__text--start,
+.exercise__btn--stopped .exercise__text--stop{
+    display: block;
 }

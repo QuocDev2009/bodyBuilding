@@ -12,12 +12,12 @@
             <h1 class="exercise__name"></h1>
             <div class="exercise__time-remaining"></div>
             <div class="exercise__img">
-                <img src="./assets/img/raise_thigh.jpg" alt="">
+                <img src="" alt="">
             </div>
-            <audio>
-                <source src="./assets/sound/timeout.mp3" type="audio/mpeg">
-                Your browser doesn't support audio
-            </audio>
+            <button class="exercise__btn exercise__btn--started">
+                <span class="exercise__text--start">start</span>
+                <span class="exercise__text--stop">stop</span>
+            </button>
         </div>
     </div>
     <script src="./exercise.js"></script>
@@ -28,6 +28,9 @@
             exerTime: '.exercise__time-remaining',
             imgRest: './assets/img/rest.png',
             restHeading: 'Rest time',
+            controlsBtn : '.exercise__btn',
+            stopBtn : 'exercise__btn--stopped',
+            runBtn : 'exercise__btn--started',
             timeRest: 30,
             exerList: [
                 {
@@ -74,7 +77,7 @@
                 {
                     name: 'chair sit up',
                     time: 30,
-                    times: 30,
+                    times: 2,
                     img:'./assets/img/chair_sit_up.jpg'
                 },
                 {
@@ -87,7 +90,7 @@
                     name:'knee to elbow plank',
                     times: 2,
                     time: 30,
-                    img: '.assets/img/knee_to_elbow_plank.jpg'
+                    img: './assets/img/knee_to_elbow_plank.jpg'
                 }
             ]
         })
