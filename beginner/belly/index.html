@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCISE - BEGINNER - BELLY</title>
+    <link rel="stylesheet" href="/assets/style/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="exercise">
+            <h1 class="exercise__name"></h1>
+            <div class="exercise__time-remaining"></div>
+            <div class="exercise__img">
+                <img alt="">
+            </div>
+            <button class="exercise__btn exercise__btn--started">
+                <span class="exercise__text--start">start</span>
+                <span class="exercise__text--stop">stop</span>
+            </button>
+        </div>
+    </div>
+    <script src="/assets/script/exercise.js"></script>
+    <script>
+        exercises({
+            form: '.exercise',
+            exerName: '.exercise__name',
+            exerTime: '.exercise__time-remaining',
+            imgRest: '/assets/img/beginner/belly/rest.png',
+            restHeading: 'Rest time',
+            controlsBtn : '.exercise__btn',
+            stopBtn : 'exercise__btn--stopped',
+            runBtn : 'exercise__btn--started',
+            timeRest: 30,
+            exerList: [
+                {
+                    name: 'raise thighs',
+                    time: 30,
+                    img: '/assets/img/beginner/belly/raise_thigh.jpg',
+                },
+                {
+                    name: 'plank up and down',
+                    time: 30,
+                    img: '/assets/img/beginner/belly/plankupanddown.jpg',
+                    times: 2
+                },
+                {
+                    name: 'double leg thrust',
+                    times: 2,
+                    time: 30,
+                    img: '/assets/img/beginner/belly/double_leg_thrust.jpg',
+                },
+                {
+                    name: 'jumping jack',
+                    times: 2,
+                    time: 30,
+                    img: '/assets/img/beginner/belly/jumping_jack.jpg'
+                },
+                {
+                    name: 'sit up',
+                    times: 2,
+                    time: 30,
+                    img : '/assets/img/beginner/belly/sit_up.jpg'
+                },
+                {
+                    name: 'flutter kick',
+                    times: 2,
+                    time: 30,
+                    img: '/assets/img/beginner/belly/flutter_kick.jpg'
+                },
+                {
+                    name: 'plank in and out',
+                    times: 2,
+                    time: 30,
+                    img:'/assets/img/beginner/belly/plank_in_and_out.jpg'
+                },
+                {
+                    name: 'chair sit up',
+                    time: 30,
+                    times: 2,
+                    img:'/assets/img/beginner/belly/chair_sit_up.jpg'
+                },
+                {
+                    name: 'abs scissor',
+                    time: 30,
+                    times: 2,
+                    img: '/assets/img/beginner/belly/abs_scissor.jpg'
+                },
+                {
+                    name:'knee to elbow plank',
+                    times: 2,
+                    time: 30,
+                    img: '/assets/img/beginner/belly/knee_to_elbow_plank.jpg'
+                }
+            ]
+        })
+    </script>
+</body>
+</html>

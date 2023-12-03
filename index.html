@@ -3,97 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise</title>
-    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>EXERCISE - HOME</title>
+    <link rel="shortcut icon" href="./assets/img/page/iconPage.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style/page.css">
+    <link rel="stylesheet" href="./assets/style/base.css">
 </head>
 <body>
     <div class="main">
-        <div class="exercise">
-            <h1 class="exercise__name"></h1>
-            <div class="exercise__time-remaining"></div>
-            <div class="exercise__img">
-                <img src="" alt="">
+        <div class="header">
+            <div class="grid">
+                <h1 class="header__heading">Trang chủ website Body Building</h1>
+                <h2 class="header__desc">Đây là trang chủ của trang Body Building tạo ra nhằm mục đích rèn luyện sức khỏe</h2>
+                <div class="header__bot">
+                    <ul class="header__list">
+                        <li class="header__list-items" onclick="showModal('.modal','button.modal__closeBtn', '.modal__heading', '.modal__content','Thông tin về tác giả', [
+                            'Tên tác giả: Thủy Ngọc Quốc',
+                            'Sinh ngày: 12/9/2009',
+                            'Hiện tại đang là học sinh lớp 9/3 tại trường THCS Huỳnh Thúc Kháng',
+                            'Thường trú: Xã Bình Phục, Huyện Thăng Bình, Tỉnh Quảng Nam',
+                            'Là 1 người rất đam mê công việc lập trình và tôi đã quyết định tạo web này'
+                    ])">Thông tin tác giả</li>
+                        <li class="header__list-items">Lộ trình tập luyện</li>
+                    </ul>
+                    <ul class="header__list">
+                        <li class="header__list-items">Thông tin các buổi tập</li>
+                        <li class="header__list-items">Lí do tạo web</li>
+                    </ul>
+                </div>
             </div>
-            <button class="exercise__btn exercise__btn--started">
-                <span class="exercise__text--start">start</span>
-                <span class="exercise__text--stop">stop</span>
-            </button>
+        </div>
+        <div class="container">
+            <ul class="exerList">
+                <li class="exerList__items">
+                    <a href="./beginner/beginner.html">
+                        <img src="./assets/img/page/beginner.jpg" alt="">
+                        <span class="exerList__items-desc">beginner</span>
+                    </a>
+                </li>
+                <li class="exerList__items">
+                    <a href="./beginner/beginner.html">
+                        <img src="./assets/img/page/beginner.jpg" alt="">
+                        <span class="exerList__items-desc">beginner</span>
+                    </a>
+                </li>
+                <li class="exerList__items">
+                    <a href="./beginner/beginner.html">
+                        <img src="./assets/img/page/beginner.jpg" alt="">
+                        <span class="exerList__items-desc">beginner</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
-    <script src="./exercise.js"></script>
+    <div class="modal">
+        <div class="modal__container">
+            <div class="modal__heading">Thông tin về tác giả</div>
+            <div class="modal__content">
+                tên của tác giả tạo ra web: Thủy Ngọc Quốc <br>
+                tên của tác giả tạo ra web: Thủy Ngọc Quốc <br>
+                tên của tác giả tạo ra web: Thủy Ngọc Quốc <br>
+                tên của tác giả tạo ra web: Thủy Ngọc Quốc <br>
+                tên của tác giả tạo ra web: Thủy Ngọc Quốc <br>
+                tên của tác giả tạo ra web: Thủy Ngọc Quốc <br>
+                tên của tác giả tạo ra web: Thủy Ngọc Quốc <br>
+                tên của tác giả tạo ra web: Thủy Ngọc Quốc <br>
+            </div>
+            <div class="modal__bottom">
+                <button class="modal__closeBtn">Đã hiểu</button>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/script/modal.js"></script>
     <script>
-        exercises({
-            form: '.exercise',
-            exerName: '.exercise__name',
-            exerTime: '.exercise__time-remaining',
-            imgRest: './assets/img/rest.png',
-            restHeading: 'Rest time',
-            controlsBtn : '.exercise__btn',
-            stopBtn : 'exercise__btn--stopped',
-            runBtn : 'exercise__btn--started',
-            timeRest: 30,
-            exerList: [
-                {
-                    name: 'raise thighs',
-                    time: 30,
-                    img: './assets/img/raise_thigh.jpg',
-                },
-                {
-                    name: 'plank up and down',
-                    time: 30,
-                    img: './assets/img/plankupanddown.jpg',
-                    times: 2
-                },
-                {
-                    name: 'double leg thrust',
-                    times: 2,
-                    time: 30,
-                    img: './assets/img/double_leg_thrust.jpg',
-                },
-                {
-                    name: 'jumping jack',
-                    times: 2,
-                    time: 30,
-                    img: './assets/img/jumping_jack.jpg'
-                },
-                {
-                    name: 'sit up',
-                    times: 2,
-                    time: 30,
-                    img : './assets/img/sit_up.jpg'
-                },
-                {
-                    name: 'flutter kick',
-                    times: 2,
-                    time: 30,
-                    img: './assets/img/flutter_kick.jpg'
-                },
-                {
-                    name: 'plank in and out',
-                    times: 2,
-                    time: 30,
-                    img:'./assets/img/plank_in_and_out.jpg'
-                },
-                {
-                    name: 'chair sit up',
-                    time: 30,
-                    times: 2,
-                    img:'./assets/img/chair_sit_up.jpg'
-                },
-                {
-                    name: 'abs scissor',
-                    time: 30,
-                    times: 2,
-                    img: './assets/img/abs_scissor.jpg'
-                },
-                {
-                    name:'knee to elbow plank',
-                    times: 2,
-                    time: 30,
-                    img: './assets/img/knee_to_elbow_plank.jpg'
-                }
-            ]
-        })
+        
     </script>
 </body>
 </html>
