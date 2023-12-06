@@ -8,7 +8,8 @@ html{
 }
 .header{
     width: 100%;
-    height: 120px;
+    height: auto;
+    max-height: 120px;
     background-color: #000;
     color: #fff;
     text-align: center;
@@ -24,6 +25,7 @@ html{
 .header__bot{
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 .header__list{
     list-style: none;
@@ -48,13 +50,21 @@ html{
 .exerList{
     list-style: none;
 }
+.exerList__items{
+    margin: 20px 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    width: 100%;
+}
 .exerList__items a{
-    width: 300px;
+    width: 600px;
     display: inline-block;
     position: relative;
+    max-width: calc(100vw - 32px);
 }
 .exerList__items img{
     width: 100%;
+    border-radius: 4px;
 }
 .exerList__items .exerList__items-desc{
     color: #000;

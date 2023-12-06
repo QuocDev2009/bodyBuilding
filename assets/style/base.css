@@ -23,7 +23,9 @@
     background-color: #fff;
     padding: 0 20px;
     border-radius: 2px;
-    max-width: 600px;
+    width: 600px;
+    max-width: calc(100% - 32px);
+    animation: fadeIn .3s ease;
 }
 .modal__heading{
     font-size: 20px;
@@ -34,6 +36,8 @@
 .modal__content{
     line-height: 1.6;
     font-size: 17px;
+    max-height: 300px;
+    overflow-y: auto;
 }
 .modal__bottom{
     padding: 15px 0;
@@ -51,4 +55,15 @@
 .modal__closeBtn:hover{
     opacity: 0.8;
     cursor: pointer;
+}
+/* key frame */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

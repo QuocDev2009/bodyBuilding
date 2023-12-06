@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCISE - BEGINNER - LEG</title>
+    <link rel="stylesheet" href="/assets/style/style.css">
+    <link rel="shortcut icon" href="/assets/img/page/iconPage.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+        <div class="exercise">
+            <h1 class="exercise__name"></h1>
+            <div class="exercise__time-remaining"></div>
+            <div class="exercise__img">
+                <img alt="">
+            </div>
+            <button class="exercise__btn exercise__btn--started">
+                <span class="exercise__text--start">start</span>
+                <span class="exercise__text--stop">stop</span>
+            </button>
+        </div>
+    </div>
+    <script src="/assets/script/exercise.js"></script>
+    <script>
+        exercises({
+            form: '.exercise',
+            exerName: '.exercise__name',
+            exerTime: '.exercise__time-remaining',
+            imgRest: '/assets/img/page/rest.png',
+            restHeading: 'Rest time',
+            controlsBtn : '.exercise__btn',
+            stopBtn : 'exercise__btn--stopped',
+            runBtn : 'exercise__btn--started',
+            timeRest: 15,
+            exerList: [
+                {
+                    name : 'Air squats',
+                    img: '/assets/img/beginner/legs/air_squats.jpg',
+                    time: 45
+                },
+                {
+                    name: 'Kneeling squat jump',
+                    img: '/assets/img/beginner/legs/kneeling_squat_jump.png',
+                    time: 45
+                },
+                {
+                    name : 'Jump squats in and out',
+                    img: '/assets/img/beginner/legs/jump_squats_in_out.jpg',
+                    time: 45
+                },
+                {
+                    name : 'lunges back & forth',
+                    img: '/assets/img/beginner/legs/back_and_forth_lunge.webp',
+                    time: 45,
+                    times: 2
+                },
+                {
+                    name : 'Crab walk',
+                    img: '/assets/img/beginner/legs/crab_walk.jpg',
+                    time: 45
+                },
+                {
+                    name: 'single leg glute bridge',
+                    img: '/assets/img/beginner/legs/single_leg_glute_bridge.jpg',
+                    time: 45,
+                    times: 2
+                },
+                {
+                    name : 'Calf jump',
+                    img: '/assets/img/beginner/legs/calf_jump.png',
+                    time: 45,
+                    times: 2
+                },
+                {
+                    name : 'Bunny hop',
+                    img: '/assets/img/beginner/legs/bunny_hop.jpg',
+                    time: 45
+                }
+            ]
+        })
+    </script>
+</body>
+</html>

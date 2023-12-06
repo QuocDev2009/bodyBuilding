@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCISE - BEGINNER</title>
+    <link rel="stylesheet" href="/assets/style/page.css">
+    <link rel="shortcut icon" href="/assets/img/page/iconPage.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/style/base.css">
+    <link rel="stylesheet" href="/assets/style/">
+    <link rel="stylesheet" href="/assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/assets/style/reponsive.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="grid">
+                <h1 class="header__heading">Trang chủ website Body Building</h1>
+                <h2 class="header__desc">Đây là trang chủ của trang Body Building</h2>
+                <div class="header__bot">
+                    <ul class="header__list">
+                        <li class="header__list-items" onclick="showModal('.modal','button.modal__closeBtn', '.modal__heading', '.modal__content','Thông tin về tác giả', [
+                            'Tên tác giả: Thủy Ngọc Quốc',
+                            'Sinh ngày: 12/9/2009',
+                            'Hiện tại đang là học sinh lớp 9/3 tại trường THCS Huỳnh Thúc Kháng',
+                            'Thường trú: Xã Bình Phục, Huyện Thăng Bình, Tỉnh Quảng Nam',
+                            'Là 1 người rất đam mê công việc lập trình và tôi đã quyết định tạo web này'
+                    ])">
+                            <span>
+                                Thông tin tác giả
+                            </span>
+                            <i class="header__list-items-icon ti-user"></i>
+                        </li>
+                        <li class="header__list-items" onclick="showModal('.modal','button.modal__closeBtn', '.modal__heading', '.modal__content','Lộ trình luyện tập với người mới bắt đầu', [
+                        'Gợi ý lịch tập gym 3 buổi một tuần',
+                        'Buổi 1 dành cho nhóm cơ kéo: cẳng tay, cơ bắp tay trước, cơ lưng/xô',
+                        'Buổi 2 dành cho nhóm cơ đẩy: cơ bắp tay sau, cầu vai, cơ ngực',
+                        'Buổi 3: cẳng chân, bắp chuối, mông bụng',
+                        'Nếu bạn áp dụng lịch này cho tuần một thì sang tuần 2 buổi thứ 3 có thể thay thế bằng cardio.'
+                ])">
+                            <span>
+                                Lộ trình tập luyện
+                            </span>
+                            <i class="header__list-items-icon ti-eye"></i>
+                        </li>
+                    </ul>
+                    <ul class="header__list">
+                        <li class="header__list-items" onclick="showModal('.modal','button.modal__closeBtn', '.modal__heading', '.modal__content','Web của tôi có gì?', [
+                        'Rèn luyện sức khỏe là 1 điều rất tốt',
+                        'Tuy nhiên không phải lúc nào bạn cũng có thể tìm ra những bài tập',
+                        'Hoặc canh chuẩn xác thời gian cho có bài tập đó',
+                        'Biết được nỗi lòng của tất cả mọi người nên tôi quyết định tạo ra web này',
+                        'Web của tôi có thể giúp bạn điều đó',
+                        'Nó có bộ đếm thời gian chuẩn xác',
+                        'Cùng với đó là những bài tập và thời gian giải lao giữa các bài 1 cách tuần tự'
+                ])">
+                            <span>
+                                Web của tôi có gì?
+                            </span>
+                            <i class="header__list-items-icon ti-info"></i>
+                        </li>
+                        <li class="header__list-items" onclick="showModal('.modal','button.modal__closeBtn', '.modal__heading', '.modal__content','Thông tin về lộ trình luyện tập', [
+                        'Tôi tạo web này nhằm mục đích giúp mọi người rèn luyện sức khỏe',
+                        'Cũng như là phát triển cơ bắp trên người',
+                        'Cùng với đó là thỏa mãn khao khát lập trình của mình',
+                        'Do đó website Body Building đã được tạo ra'
+                ])">
+                            <span>
+                                Lí do tạo web
+                            </span>
+                            <i class="header__list-items-icon ti-world"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="exerList">
+                <li class="exerList__items">
+                    <a href="./beginner_belly.html">
+                        <img src="/assets/img/page/beginner/belly.jpg" alt="">
+                        <span class="exerList__items-desc">Belly</span>
+                    </a>
+                </li>
+                <li class="exerList__items">
+                    <a href="./beginner_arm.html">
+                        <img src="/assets/img/page/beginner/arm.jpg" alt="">
+                        <span class="exerList__items-desc">arm</span>
+                    </a>
+                </li>
+                <li class="exerList__items">
+                    <a href="./beginner_legs.html">
+                        <img src="/assets/img/page/beginner/legs.webp" alt="">
+                        <span class="exerList__items-desc">legs</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal__container">
+            <div class="modal__heading"></div>
+            <div class="modal__content">
+            </div>
+            <div class="modal__bottom">
+                <button class="modal__closeBtn">Đã hiểu</button>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/script/modal.js"></script>
+</body>
+</html>
