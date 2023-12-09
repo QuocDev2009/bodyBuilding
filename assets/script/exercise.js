@@ -3,12 +3,14 @@ function exercises(arg){
     var exerName = document.querySelector(arg.exerName)
     var exerTime = document.querySelector(arg.exerTime)
     var exerImg = form.querySelector('img')
-    var controlsBtn = document.querySelector(arg.controlsBtn)
+    var controlsBtns = document.querySelectorAll(arg.controlsBtn)
+    var exerDesc = document.querySelector(arg.exerDesc)
     var exerList = []
     const restForm = {
         name : arg.restHeading,
         time : arg.timeRest,
-        img: arg.imgRest
+        img: arg.imgRest,
+        desc: arg.restDesc
     }
     // append elements to exerList
     for (var exer of arg.exerList){
@@ -26,6 +28,7 @@ function exercises(arg){
             exerTime.textContent = timeRange
             exerName.textContent = exer.name
             exerImg.src = exer.img
+            exerDesc.textContent = exer.desc
             // count down
             function countDown(){
                 var tmp = setInterval(function(){
@@ -40,19 +43,28 @@ function exercises(arg){
             }
             if (!isFirstElement) var auto = countDown()
             var previous;
-            controlsBtn.onclick = function(){
-                if (controlsBtn.classList.contains(arg.runBtn)){
-                    controlsBtn.classList.remove(arg.runBtn)
-                    controlsBtn.classList.add(arg.stopBtn)
-                    previous = countDown()
+            Array.from(controlsBtns).forEach(function(controlsBtn){
+                controlsBtn.onclick = function(){
+                    if (controlsBtn.classList.contains(arg.runBtn)){
+                        controlsBtn.classList.remove(arg.runBtn)
+                        controlsBtn.classList.add(arg.stopBtn)
+                        previous = countDown()
+                    }
+                    else if (controlsBtn.classList.contains(arg.stopBtn)){
+                        controlsBtn.classList.remove(arg.stopBtn)
+                        controlsBtn.classList.add(arg.runBtn)
+                        clearInterval(previous)
+                        clearInterval(auto)
+                    }
+                    else if (controlsBtn.classList.contains(arg.resetBtn)){
+                        timeRange = exer.time
+                        exerTime.textContent = timeRange
+                    }
+                    else if(controlsBtn.classList.contains(arg.backBtn)){
+                        window.history.back()
+                    }
                 }
-                else if (controlsBtn.classList.contains(arg.stopBtn)){
-                    controlsBtn.classList.remove(arg.stopBtn)
-                    controlsBtn.classList.add(arg.runBtn)
-                    clearInterval(previous)
-                    clearInterval(auto)
-                }
-            }
+            })
         }
         return
     }

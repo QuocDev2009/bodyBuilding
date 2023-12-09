@@ -14,7 +14,7 @@
     .header__desc{
         display: none;
     }
-    .header__list-items span{
+    .header__list-items .header__list-items-text{
         display: none;
     }
     .header__list-items-icon{

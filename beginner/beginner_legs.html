@@ -11,6 +11,7 @@
     <div class="main">
         <div class="exercise">
             <h1 class="exercise__name"></h1>
+            <span class="exercise__desc"></span>
             <div class="exercise__time-remaining"></div>
             <div class="exercise__img">
                 <img alt="">
@@ -18,6 +19,12 @@
             <button class="exercise__btn exercise__btn--started">
                 <span class="exercise__text--start">start</span>
                 <span class="exercise__text--stop">stop</span>
+            </button>
+            <button class="exercise__btn exercise__btn--reset">
+                <span class="exercise__text--reset">reset</span>
+            </button>
+            <button class="exercise__btn exercise__btn--back">
+                <span class="exercise__text--back">Trở về trang trước</span>
             </button>
         </div>
     </div>
@@ -29,9 +36,12 @@
             exerTime: '.exercise__time-remaining',
             imgRest: '../assets/img/page/rest.png',
             restHeading: 'Rest time',
+            exerDesc: '.exercise__desc',
             controlsBtn : '.exercise__btn',
             stopBtn : 'exercise__btn--stopped',
+            restDesc: 'Đây là khoảng thời gian nghỉ ngơi',
             runBtn : 'exercise__btn--started',
+            backBtn : 'exercise__btn--back',
             timeRest: 15,
             exerList: [
                 {

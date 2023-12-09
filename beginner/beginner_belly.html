@@ -11,6 +11,7 @@
     <div class="main">
         <div class="exercise">
             <h1 class="exercise__name"></h1>
+            <span class="exercise__desc"></span>
             <div class="exercise__time-remaining"></div>
             <div class="exercise__img">
                 <img alt="">
@@ -18,6 +19,12 @@
             <button class="exercise__btn exercise__btn--started">
                 <span class="exercise__text--start">start</span>
                 <span class="exercise__text--stop">stop</span>
+            </button>
+            <button class="exercise__btn exercise__btn--reset">
+                <span class="exercise__text--reset">reset</span>
+            </button>
+            <button class="exercise__btn exercise__btn--back">
+                <span class="exercise__text--back">Trở về trang trước</span>
             </button>
         </div>
     </div>
@@ -28,22 +35,27 @@
             exerName: '.exercise__name',
             exerTime: '.exercise__time-remaining',
             imgRest: '../assets/img/page/rest.png',
+            exerDesc: '.exercise__desc',
             restHeading: 'Rest time',
             controlsBtn : '.exercise__btn',
             stopBtn : 'exercise__btn--stopped',
             runBtn : 'exercise__btn--started',
+            resetBtn: 'exercise__btn--reset',
+            backBtn : 'exercise__btn--back',
+            restDesc: 'Đây là khoảng thời gian nghỉ ngơi',
             timeRest: 30,
             exerList: [
                 {
                     name: 'raise thighs',
                     time: 30,
                     img: '../assets/img/beginner/belly/raise_thigh.jpg',
+                    desc: 'đưa đùi lên cao vuông góc với cơ thể rồi hạ xuống thật nhanh và đều 2 chân'
                 },
                 {
                     name: 'plank up and down',
                     time: 30,
                     img: '../assets/img/beginner/belly/plankupanddown.jpg',
-                    times: 2
+                    times: 2,
                 },
                 {
                     name: 'double leg thrust',

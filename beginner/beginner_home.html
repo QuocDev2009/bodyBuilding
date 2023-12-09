@@ -14,8 +14,8 @@
     <div class="main">
         <div class="header">
             <div class="grid">
-                <h1 class="header__heading">Trang chủ website Body Building</h1>
-                <h2 class="header__desc">Đây là trang chủ của trang Body Building</h2>
+                <h1 class="header__heading">Trang dành cho người mới Body Building</h1>
+                <h2 class="header__desc">Đây là trang dành cho người mới Body Building</h2>
                 <div class="header__bot">
                     <ul class="header__list">
                         <li class="header__list-items" onclick="showModal('.modal','button.modal__closeBtn', '.modal__heading', '.modal__content','Thông tin về tác giả', [
@@ -25,7 +25,7 @@
                             'Thường trú: Xã Bình Phục, Huyện Thăng Bình, Tỉnh Quảng Nam',
                             'Là 1 người rất đam mê công việc lập trình và tôi đã quyết định tạo web này'
                     ])">
-                            <span>
+                            <span class="header__list-items-text">
                                 Thông tin tác giả
                             </span>
                             <i class="header__list-items-icon ti-user"></i>
@@ -37,7 +37,7 @@
                         'Buổi 3: cẳng chân, bắp chuối, mông bụng',
                         'Nếu bạn áp dụng lịch này cho tuần một thì sang tuần 2 buổi thứ 3 có thể thay thế bằng cardio.'
                 ])">
-                            <span>
+                            <span class="header__list-items-text">
                                 Lộ trình tập luyện
                             </span>
                             <i class="header__list-items-icon ti-eye"></i>
@@ -53,7 +53,7 @@
                         'Nó có bộ đếm thời gian chuẩn xác',
                         'Cùng với đó là những bài tập và thời gian giải lao giữa các bài 1 cách tuần tự'
                 ])">
-                            <span>
+                            <span class="header__list-items-text">
                                 Web của tôi có gì?
                             </span>
                             <i class="header__list-items-icon ti-info"></i>
@@ -64,10 +64,16 @@
                         'Cùng với đó là thỏa mãn khao khát lập trình của mình',
                         'Do đó website Body Building đã được tạo ra'
                 ])">
-                            <span>
+                            <span class="header__list-items-text">
                                 Lí do tạo web
                             </span>
                             <i class="header__list-items-icon ti-world"></i>
+                        </li>
+                        <li class="header__list-items" onclick="changeTo('../index.html')">
+                            <a href="../index.html" class="header__list-items-text">
+                                Trang chủ
+                            </a>
+                            <i class="header__list-items-icon ti-home"></i>
                         </li>
                     </ul>
                 </div>
@@ -108,5 +114,6 @@
         </div>
     </div>
     <script src="../assets/script/modal.js"></script>
+    <script src="../assets/script/nav.js"></script>
 </body>
 </html>

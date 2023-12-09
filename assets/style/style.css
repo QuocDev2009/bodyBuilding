@@ -32,17 +32,27 @@
 }
 .exercise__btn{
     width: 100%;
-    height: 100px;
+    height: 50px;
     color: #fff;
     font-weight:600;
     font-size: 20px;
     text-transform: uppercase;
     border: none;
+    margin: 10px 0;
+    transition: transform .3s ease;
+}
+.exercise__btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    transform: translateY(-5px) scale(1.01);
 }
 .exercise__btn--started{
     background-color: rgb(32, 207, 32);
 }
 .exercise__btn--stopped{
+    background-color: #f00;
+}
+.exercise__btn--reset{
     background-color: #f00;
 }
 .exercise__text--start,
@@ -52,4 +62,17 @@
 .exercise__btn--started .exercise__text--start,
 .exercise__btn--stopped .exercise__text--stop{
     display: block;
+}
+.exercise__desc{
+    font-size: 18px;
+    margin: 15px 0;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.exercise__btn--back{
+    background-color: #000;
+}
+.exercise__text--back{
+    color: #fff;
 }
